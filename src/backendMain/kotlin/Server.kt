@@ -28,7 +28,6 @@ fun main(): Unit {
                         script (
                             src = "/static/main.bundle.js"
                         ) {}
-                        text("Сука завтра нада чекнуть как эту хуйню с ковижоном сопряжить")
                     }
                 }
             }
