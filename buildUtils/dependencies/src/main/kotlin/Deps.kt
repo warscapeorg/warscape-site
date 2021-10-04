@@ -76,6 +76,7 @@ object Deps {
             object Server {
                 const val Core = "io.ktor:ktor-server-core:$ktorVersion"
                 const val Cio = "io.ktor:ktor-server-cio:$ktorVersion"
+                const val Html = "io.ktor:ktor-html-builder:$ktorVersion"
                 const val Serialization = "io.ktor:ktor-serialization:$ktorVersion"
                 const val Openapi = "com.github.papsign:Ktor-OpenAPI-Generator:$ktorOpenapiVersion"
             }
@@ -132,6 +133,9 @@ object Deps {
         }
     }
     object Plugins {
+        object Deploy {
+            const val Id = "deploy"
+        }
         object Configuration {
             object Kotlin {
                 const val Mpp = "k-mpp"
@@ -167,6 +171,12 @@ object Deps {
             const val Id = "org.hidetake.ssh"
             const val Classpath = "org.hidetake:gradle-ssh-plugin:$sshVersion"
         }
+
+        object Shadow {
+            const val Classpath = "gradle.plugin.com.github.jengelman.gradle.plugins:shadow:$shadowVer"
+            const val Id = "com.github.johnrengelman.shadow"
+        }
+
         object Publish {
             const val Id = "publish"
             const val Classpath = "publish:publish:SNAPSHOT"
